@@ -317,6 +317,7 @@ B. Helpers
     height: 100%;
     overflow: hidden;
     width: 100%;
+    opacity: 0.7;
 }
 
 .ts-background-image img, .ts-img-into-bg img {
@@ -1704,13 +1705,23 @@ body.loading-done #ts-hero.ts-animate-hero-items .ts-social-icons {
 -------------------------------------------*/
 
 .navbar {
-    font-size: .875rem;
+    font-size: 1rem;
     font-weight: 500;
     transition: .3s ease;
     text-transform: uppercase;
     padding-top: 0;
     padding-bottom: 0;
+    background-color: #020312;
 }
+.nav-item {
+    color: rgb(255, 255, 255) !important;
+}
+
+.nav-item:hover{
+
+    color: #f26c4f !important;
+}
+
 
 .navbar .ts-background {
     transition: 1s ease;
