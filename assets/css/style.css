@@ -1424,9 +1424,56 @@ form.ts-labels-inside-input .form-group label.focused,
 }
 
 .ts-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .ts-gallery__item {
+    position: relative;
+  }
+  
+  .ts-gallery__item-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    transition: all 0.3s ease;
+    opacity: 0;
+  }
+  
+  .ts-gallery__item:hover .ts-gallery__item-description {
+    opacity: 1;
+  }
+  
+  .ts-gallery__item-description h6 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  
+  .ts-gallery__item-description h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .ts-gallery__item img {
+    width: 100%;
+    height: auto;
+  }
+.ts-gallery {
     position: relative;
 }
 
+.ts-block#portfolio .ts-title {
+    text-align: center;
+  }
 .ts-gallery .ts-gallery__item {
     border-radius: 0;
     background-color: transparent;
