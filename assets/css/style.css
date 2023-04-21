@@ -1504,7 +1504,7 @@ form.ts-labels-inside-input .form-group label.focused,
 }
 
 .ts-gallery .ts-gallery__item:hover img {
-    transform: scale(1.3) rotate(-9deg);
+    transform: scale(1.1);
 }
 
 .ts-gallery .ts-gallery__item h4 {

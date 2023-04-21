@@ -504,3 +504,29 @@ function initOwl(){
         });
     }
 }
+
+  $(document).ready(function(){
+    $(".ts-gallery").owlCarousel({
+      loop: true,
+      nav: true,
+      dots: false,
+      margin: 30,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false,
+        },
+        576: {
+          items: 2,
+          nav: false,
+        },
+        768: {
+          items: 3,
+        },
+        992: {
+          items: 4,
+        },
+      },
+    });
+  });
