@@ -1798,6 +1798,8 @@ body.loading-done #ts-hero.ts-animate-hero-items .ts-social-icons {
     margin-left: auto;
     margin-top: .5rem;
     margin-bottom: .5rem;
+    background-color: #f26c4f;
+    border: 1px solid transparent;
 }
 
 [class*="navbar-expand"] .navbar-nav .nav-link {
@@ -2878,3 +2880,5 @@ E. Template Specific Elements
     text-align: center;
     display: block;
     }
+
+    
