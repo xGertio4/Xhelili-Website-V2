@@ -2844,3 +2844,39 @@ E. Template Specific Elements
         left: 2.5rem;
     }
 }
+
+
+.img-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    .img-list li {
+    border: 5px solid transparent;
+    box-sizing: border-box;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    }
+    .img-list img {
+    max-width: 100%;
+    vertical-align: middle;
+    }
+    
+    /* Image Placeholder Styles
+    -------------------------------------------------------------- */
+    .img-placeholder:before,
+    .img-placeholder:after {
+    padding-top: 33.33%;
+    content: "";
+    display: block;
+    }  
+    .img-placeholder {
+    background: #222;
+    box-shadow: 0 0 0 8px #222 inset, 0 0 0 9px #333 inset;
+    color: #444;
+    line-height: 0;
+    text-align: center;
+    display: block;
+    }
