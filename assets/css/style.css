@@ -1700,7 +1700,6 @@ body.has-loading-screen.loading-done:after {
 /*-------------------------------------------
   -- Hero
 -------------------------------------------*/
-
 #ts-hero {
     display: flex;
     height: 100vh;
@@ -2880,5 +2879,54 @@ E. Template Specific Elements
     text-align: center;
     display: block;
     }
+    #slideshow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .image-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1100px;
+        height: auto;
+        margin: 0 auto;
+        border: 2px solid #ffffff; /* Add white border around the image */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+      
+      .image-wrapper img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .ts-title.text-center {
+        margin-bottom: 20px;
+      }
+      #testimonials {
+        padding-top: 30px; /* Add padding at the top of the testimonials section */
+      }
+      
+      #testimonials h2 {
+        margin-bottom: 50px; /* Adjust the margin at the bottom of the testimonials section title */
+      }
+      
+      #about-me {
+        padding-top: 30px; /* Add padding at the top of the testimonials section */
+      }
+      
+      #about-me h2 {
+        margin-bottom: 50px; /* Adjust the margin at the bottom of the testimonials section title */
+      }
 
+      
+      
+      
+      
     

@@ -277,61 +277,85 @@
 
             <section class="ts-block pb-5" id="portfolio">
                 <div class="ts-title text-center">
-                    <h2>Portfolio</h2>
+                  <h2>Portfolio</h2>
                 </div>
-                <ul class="img-list">
-                    
-                    <li><img src="assets/img/projekti1.jpg"></li>
-                    <li><img src="assets/img/projekti2.jpg"></li>
-                    <li><img src="assets/img/projekti3.jpg"></li>
-                  </ul>
-</section>
+                <div id="slideshow" class="img-list">
+                  <div class="image-wrapper">
+                    <img src="assets/img/projekti1.jpg" alt="Image 1">
+                  </div>
+                  <div class="image-wrapper">
+                    <img src="assets/img/projekti2.jpg" alt="Image 2">
+                  </div>
+                  <div class="image-wrapper">
+                    <img src="assets/img/projekti3.jpg" alt="Image 3">
+                  </div>
+                </div>
+              </section>
+              
+              <script>
+                var slideIndex = 0;
+                carousel();
+              
+                function carousel() {
+                  var i;
+                  var slides = document.getElementById("slideshow").getElementsByClassName("image-wrapper");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                  }
+                  slides[slideIndex - 1].style.display = "flex"; // Show the current slide
+                  setTimeout(carousel, 3000); // Change slide every 3 seconds
+                }
+              </script>
+              
 <!--end portfolio-->
 
 
             <section id="testimonials" class="ts-block text-center pb-5">
-                <div class="container">
-                    <div class="ts-title">
-                        <h2 style="color: #010312;">.</h2>
-                    </div>
-                    <h2>Testimonials</h2>
-                    <!--end ts-title-->
-                    <div class="row">
-                        <div class="col-md-8 offset-md-2">
-                            <div class="owl-carousel" data-owl-dots="1" data-owl-loop="1" data-animate="ts-fadeInUp">
-                                <div class="slide mb-5">
-                                    <figure class="d-inline-block p-3 ts-bg-primary text-white ts-has-talk-arrow">
-                                        <i class="fa fa-quote-right"></i>
-                                    </figure>
-                                    <p class="ts-h5">
-                                       The last website created by "Xhelili Solutions" about my gaming career has brought me so many viewers online and i saw a big increase on my incomes also . Thank u guys !
-                                    </p>
-                                    <div class="ts-circle__lg mb-3" data-bg-image="assets/img/testimon1.png"></div>
-                                    <h5>Erjon Muhametaj</h5>
-                                    <h6 class="ts-opacity__40">Unicorns of Love</h6>
-                                </div>
-                                <!--end slide-->
-                                <div class="slide mb-5">
-                                    <figure class="d-inline-block p-3 ts-bg-primary text-white ts-has-talk-arrow">
-                                        <i class="fa fa-quote-right"></i>
-                                    </figure>
-                                    <p class="ts-h5">
-Always a pleasure working with "Xhelili Solutions" , really fast to deliver the final product matching all the requests made on the order. 10/10 service
-                                    <div class="ts-circle__lg mb-3" data-bg-image="assets/img/testimon2.jpg"></div>
-                                    <h5>Paris Xhetani</h5>
-                                    <h6 class="ts-opacity__40">Developer</h6>
-                                </div>
-                                <!--end slide-->
-                            </div>
-                            <!--end owl-carousel-->
-                        </div>
-                        <!--end col-md-8-->
-                    </div>
-                    <!--end row-->
-                </div>
-                <!--end container-->
-            </section>
-            <!--end #testimonials ts-block-->
+  <div class="container">
+    <h2>Testimonials</h2>
+    <!--end ts-title-->
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="owl-carousel" data-owl-dots="1" data-owl-loop="1" data-animate="ts-fadeInUp">
+          <div class="slide mb-5">
+            <figure class="d-inline-block p-3 ts-bg-primary text-white ts-has-talk-arrow">
+              <i class="fa fa-quote-right"></i>
+            </figure>
+            <p class="ts-h5 mb-4">
+              The last website created by "Xhelili Solutions" about my gaming career has brought me so many viewers online and I saw a big increase in my income as well. Thank you, guys!
+            </p>
+            <div class="ts-circle__lg mb-3" data-bg-image="assets/img/testimon1.png"></div>
+            <h5>Erjon Muhametaj</h5>
+            <h6 class="ts-opacity__40">Unicorns of Love</h6>
+          </div>
+          <!--end slide-->
+          <div class="slide mb-5">
+            <figure class="d-inline-block p-3 ts-bg-primary text-white ts-has-talk-arrow">
+              <i class="fa fa-quote-right"></i>
+            </figure>
+            <p class="ts-h5 mb-4">
+              Always a pleasure working with "Xhelili Solutions". They are really fast to deliver the final product, meeting all the requests made on the order. 10/10 service.
+            </p>
+            <div class="ts-circle__lg mb-3" data-bg-image="assets/img/testimon2.jpg"></div>
+            <h5>Paris Xhetani</h5>
+            <h6 class="ts-opacity__40">Developer</h6>
+          </div>
+          <!--end slide-->
+        </div>
+        <!--end owl-carousel-->
+      </div>
+      <!--end col-md-8-->
+    </div>
+    <!--end row-->
+  </div>
+  <!--end container-->
+</section>
+<!--end #testimonials ts-block-->
+
            
 
         </main>
