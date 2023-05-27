@@ -14,7 +14,17 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 	<title>Xhelili Solutions</title>
+    <script src="custom.js"></script>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("oSAncPhw37AX4Gxie");
+      })();
+    </script>
 </head>
 <body data-spy="scroll" data-target=".navbar" class="has-loading-screen">
     <div class="ts-page-wrapper" id="page-top">
@@ -448,7 +458,7 @@
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
                                                 <label for="form-contact-name">Name *</label>
-                                                <input type="text" class="form-control" id="form-contact-name" name="name" placeholder="Name" required>
+                                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                                             </div>
                                             <!--end form-group -->
                                         </div>
@@ -456,23 +466,19 @@
                                         <div class="col-md-6 col-sm-6">
                                             <div class="form-group">
                                                 <label for="form-contact-email">Email *</label>
-                                                <input type="email" class="form-control" id="form-contact-email" name="email" placeholder="Email" required>
+                                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
                                             </div>
                                             <!--end form-group -->
                                         </div>
                                         <!--end col-md-6 col-sm-6 -->
                                     </div>
                                     <!--end row -->
-                                    <div class="form-group">
-                                        <label for="form-contact-subject">Subject *</label>
-                                        <input type="text" class="form-control" id="form-contact-subject" name="subject" placeholder="Subject" required>
-                                    </div>
                                     <!--end form-group -->
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="form-contact-message">Message *</label>
-                                                <textarea class="form-control" id="form-contact-message" rows="5" name="message" placeholder="Message" required></textarea>
+                                                <textarea class="form-control" id="message" rows="5" name="message" placeholder="Message" required></textarea>
                                             </div>
                                             <!--end form-group -->
                                         </div>
@@ -480,7 +486,7 @@
                                     </div>
                                     <!--end row -->
                                     <div class="form-group clearfix">
-                                        <button type="submit" class="btn btn-primary float-right ts-btn-arrow" id="form-contact-submit">Send a Message</button>
+                                        <button type="submit" class="btn btn-primary float-right ts-btn-arrow" id="form-contact-submit" onclick="sendMail()">Send a Message</button>
                                     </div>
                                     <!--end form-group -->
                                     <div class="form-contact-status"></div>
