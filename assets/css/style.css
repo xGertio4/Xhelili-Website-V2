@@ -2924,8 +2924,39 @@ E. Template Specific Elements
         margin-bottom: 50px; /* Adjust the margin at the bottom of the testimonials section title */
       }
 
-      
-      
+  .slideshow-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slideshow-container .prev,
+  .slideshow-container .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+
+  .slideshow-container .prev {
+    left: 20px;
+  }
+
+  .slideshow-container .next {
+    right: 20px;
+  }
+
+  .slideshow-container .prev:hover,
+  .slideshow-container .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
       
       
     
